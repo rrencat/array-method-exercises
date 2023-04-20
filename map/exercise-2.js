@@ -36,6 +36,8 @@ const people = [
   },
 ];
 
-const greetingMessages = null; // Replace null and add .map code here
+const greetingMessages = people.map((item) => {
+  return `Hello ${item.firstName} ${item.lastName}!`;
+})
 
 console.log(greetingMessages);
